@@ -11,16 +11,13 @@ module baudGenerator(
 	// buffer
 	reg [22:0] buffer = 23'b0;
 	
-	always@(posedge CLK) 
-		begin
-			if (buffer[22] == 1'b1)
-				begin
+	always@(posedge CLK) begin
+			if (buffer[22] == 1'b1) begin
 					buffer <= 23'b0;
 					BAUD   <= ~BAUD;
-				end
-			else
+			end else
 				buffer <= buffer + 1'b1;
-		end
+	end
 endmodule			
 				
 		

@@ -58,9 +58,6 @@ set_global_assignment -name VERILOG_FILE baudGenerator.v
 set_global_assignment -name VERILOG_FILE TBbaudGenerator.v
 set_global_assignment -name VERILOG_FILE counter.v
 set_global_assignment -name VERILOG_FILE TBcounter.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_AB28 -to SEL
 set_location_assignment PIN_G19 -to OUT[0]
 set_location_assignment PIN_F19 -to OUT[1]
@@ -94,4 +91,51 @@ set_location_assignment PIN_G16 -to OUT[16]
 set_location_assignment PIN_H15 -to OUT[17]
 set_location_assignment PIN_G21 -to OUT[18]
 set_location_assignment PIN_M23 -to RST
+set_global_assignment -name VERILOG_FILE BCD.v
+set_global_assignment -name VERILOG_FILE BCDto7SEG.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_H22 -to SEG0[6]
+set_location_assignment PIN_J22 -to SEG0[5]
+set_location_assignment PIN_L25 -to SEG0[4]
+set_location_assignment PIN_L26 -to SEG0[3]
+set_location_assignment PIN_E17 -to SEG0[2]
+set_location_assignment PIN_F22 -to SEG0[1]
+set_location_assignment PIN_G18 -to SEG0[0]
+set_location_assignment PIN_U24 -to SEG1[6]
+set_location_assignment PIN_U23 -to SEG1[5]
+set_location_assignment PIN_W25 -to SEG1[4]
+set_location_assignment PIN_W22 -to SEG1[3]
+set_location_assignment PIN_W21 -to SEG1[2]
+set_location_assignment PIN_Y22 -to SEG1[1]
+set_location_assignment PIN_M24 -to SEG1[0]
+set_location_assignment PIN_AA25 -to SEG2[0]
+set_location_assignment PIN_W28 -to SEG2[6]
+set_location_assignment PIN_W27 -to SEG2[5]
+set_location_assignment PIN_Y26 -to SEG2[4]
+set_location_assignment PIN_W26 -to SEG2[3]
+set_location_assignment PIN_Y25 -to SEG2[2]
+set_location_assignment PIN_AA26 -to SEG2[1]
+set_location_assignment PIN_Y19 -to SEG3[6]
+set_location_assignment PIN_AF23 -to SEG3[5]
+set_location_assignment PIN_AD24 -to SEG3[4]
+set_location_assignment PIN_AA21 -to SEG3[3]
+set_location_assignment PIN_AB20 -to SEG3[2]
+set_location_assignment PIN_U21 -to SEG3[1]
+set_location_assignment PIN_V21 -to SEG3[0]
+set_location_assignment PIN_AE18 -to SEG4[6]
+set_location_assignment PIN_AF19 -to SEG4[5]
+set_location_assignment PIN_AE19 -to SEG4[4]
+set_location_assignment PIN_AH21 -to SEG4[3]
+set_location_assignment PIN_AG21 -to SEG4[2]
+set_location_assignment PIN_AA19 -to SEG4[1]
+set_location_assignment PIN_AB19 -to SEG4[0]
+set_location_assignment PIN_AH18 -to SEG5[6]
+set_location_assignment PIN_AF18 -to SEG5[5]
+set_location_assignment PIN_AG19 -to SEG5[4]
+set_location_assignment PIN_AH19 -to SEG5[3]
+set_location_assignment PIN_AB18 -to SEG5[2]
+set_location_assignment PIN_AC18 -to SEG5[1]
+set_location_assignment PIN_AD18 -to SEG5[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
